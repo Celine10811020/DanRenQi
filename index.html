@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+  <title>單人棋</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1 class="title">單人棋</h1>
+    <br>
+    <h2 class="discription">
+    遊戲規則：
+    <br>
+    &emsp;&emsp;遊戲玩法類似跳棋，不能走步，只能跳。開局的時候，可從任意方向將棋子跳過相鄰的棋子到另一處的空位上（只能跳過一個棋子而不能一次跨越多個棋子），並且必須把被跳過的棋子吃掉。棋子可以沿格水平或垂直方向跳，但是不能斜著跳，剩下的棋子越少越好。
+    <br>
+    &emsp;&emsp;單人棋的終極目標為：將所有的棋子吃掉之後，剛好只留下一枚棋子，並且這枚棋子剛好落在正中央的棋格。
+    <br>
+    &emsp;&emsp;最終結果可分為七種等級，由低至高分別是：普通級－進階級－優秀級－聰明級－尖端級－大師級－天才級</h2>
+    <br>
+
+  <div class="wrapper">
+    <div class="QiPan">
+      <div class="hide"></div>
+      <div class="hide"></div>
+      <div class="show" id="divOne">
+        <a class="button" id="buttenOne"></a>
+      </div>
+      <div class="show" id="divTwo">
+        <a class="button" id="buttenTwo"></a>
+      </div>
+      <div class="show" id="divThree">
+        <a class="button"id="buttenThree"></a>
+      </div>
+      <div class="hide"></div>
+      <div class="hide"></div>
+
+      <div class="hide"></div>
+      <div class="hide"></div>
+      <div class="show" id="divFour">
+        <a class="button"id="buttenFour"></a>
+      </div>
+      <div class="show" id="divFive">
+        <a class="button"id="buttenFive"></a>
+      </div>
+      <div class="show" id="divSix">
+        <a class="button"id="buttenSix"></a>
+      </div>
+      <div class="hide"></div>
+      <div class="hide"></div>
+
+      <div class="show" id="divSeven">
+        <a class="button" id="buttenSeven"></a>
+      </div>
+      <div class="show" id="divEight">
+        <a class="button" id="buttenEight"></a>
+      </div>
+      <div class="show" id="divNine">
+        <a class="button" id="buttenNine"></a>
+      </div>
+      <div class="show" id="divTen">
+        <a class="button" id="buttenTen"></a>
+      </div>
+      <div class="show" id="divEleven">
+        <a class="button" id="buttenEleven"></a>
+      </div>
+      <div class="show" id="divTwelve">
+        <a class="button" id="buttenTwelve"></a>
+      </div>
+      <div class="show" id="divThirteen">
+        <a class="button" id="buttenThirteen"></a>
+      </div>
+
+      <div class="show" id="divFourteen">
+        <a class="button" id="buttenFourteen"></a>
+      </div>
+      <div class="show" id="divFifteen">
+        <a class="button" id="buttenFifteen"></a>
+      </div>
+      <div class="show" id="divSixteen">
+        <a class="button" id="buttenSixteen"></a>
+      </div>
+      <div class="show" id="divSeventeen">
+        <a class="button" id="buttenSeventeen"></a>
+      </div>
+      <div class="show" id="divEighteen">
+        <a class="button" id="buttenEighteen"></a>
+      </div>
+      <div class="show" id="divNineteen">
+        <a class="button" id="buttenNineteen"></a>
+      </div>
+      <div class="show" id="divTwenty">
+        <a class="button" id="buttenTwenty"></a>
+      </div>
+
+      <div class="show" id="divTwentyone">
+        <a class="button" id="buttenTwentyone"></a>
+      </div>
+      <div class="show" id="divTwentytwo">
+        <a class="button" id="buttenTwentytwo"></a>
+      </div>
+      <div class="show" id="divTwentythree">
+        <a class="button" id="buttenTwentythree"></a>
+      </div>
+      <div class="show" id="divTwentyfour">
+        <a class="button" id="buttenTwentyfour"></a>
+      </div>
+      <div class="show" id="divTwentyfive">
+        <a class="button" id="buttenTwentyfive"></a>
+      </div>
+      <div class="show" id="divTwentysix">
+        <a class="button" id="buttenTwentysix"></a>
+      </div>
+      <div class="show" id="divTwentyseven">
+        <a class="button" id="buttenTwentyseven"></a>
+      </div>
+
+      <div class="hide"></div>
+      <div class="hide"></div>
+      <div class="show" id="divTwentyeight">
+        <a class="button" id="buttenTwentyeight"></a>
+      </div>
+      <div class="show" id="divTwentynine">
+        <a class="button" id="buttenTwentynine"></a>
+      </div>
+      <div class="show" id="divThirty">
+        <a class="button" id="buttenThirty"></a>
+      </div>
+      <div class="hide"></div>
+      <div class="hide"></div>
+
+      <div class="hide"></div>
+      <div class="hide"></div>
+      <div class="show" id="divThirtyone">
+        <a class="button" id="buttenThirtyone"></a>
+      </div>
+      <div class="show" id="divThirtytwo">
+        <a class="button" id="buttenThirtytwo"></a>
+      </div>
+      <div class="show" id="divThirtythree">
+        <a class="button" id="buttenThirtythree"></a>
+      </div>
+      <div class="hide"></div>
+      <div class="hide"></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <button id="end"> 結束 </button>
+  </div>
+</body>
+
+<script src="declare.js"></script>
+<script src="main.js"></script>
+<script>
+  $(document).bind("contextmenu copy selectstart", function() {
+    return false;
+  });
+</script>
+
+</html>

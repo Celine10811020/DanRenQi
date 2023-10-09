@@ -1,0 +1,62 @@
+.title
+{
+  text-align: center;
+}
+
+.discription
+{
+  margin-left: 10vw;
+  margin-right: 10vw;
+  text-align: left;
+}
+
+.wrapper
+{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.QiPan
+{
+  margin: 1vw;
+  width: 20vw;
+  height: 20vw;
+}
+
+.show
+{
+  margin: 0.1vw;
+  width: 2.5vw;
+  height: 2.5vw;
+  border: 0.1vw solid black;
+  position: relative;
+  float: left;
+}
+.hide
+{
+  margin: 0.1vw;
+  width: 2.5vw;
+  height: 2.5vw;
+  border: 0.1vw solid white;
+  position: relative;
+  float: left;
+}
+
+.button {
+  margin:0.2vw;
+  height: 2vw;
+  width: 2vw;
+  border-radius: 50%;
+  border: 1px solid gray;
+  background: gray;
+  display: block;
+  cursor: pointer;
+}
+
+.footer
+{
+  margin-top: 5vw;
+  margin-right: 10vw;
+  text-align: right;
+}
