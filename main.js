@@ -1269,7 +1269,7 @@ function divSixteen()
       seventeen = 0;
 
       document.getElementById('buttenEighteen').style.visibility = 'hidden';
-      document.getElementById('buttenSeven').style.visibility = 'hidden';
+      document.getElementById('buttenSeventeen').style.visibility = 'hidden';
       document.getElementById('buttenSixteen').style.visibility = 'visible';
     }else if(twentyeight==2 && twentythree==1)
     {
@@ -1454,7 +1454,7 @@ function divTwentytwo()
       eight = 0;
       fifteen = 0;
 
-      document.getElementById('buttenTwentytwo').style.visibility = 'hidden';
+      document.getElementById('buttenEight').style.visibility = 'hidden';
       document.getElementById('buttenFifteen').style.visibility = 'hidden';
       document.getElementById('buttenTwentytwo').style.visibility = 'visible';
     }else if(twentyfour==2 && twentythree==1)
