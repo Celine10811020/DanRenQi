@@ -1214,7 +1214,7 @@ function divFourteen()
 
       document.getElementById('buttenSixteen').style.visibility = 'hidden';
       document.getElementById('buttenFifteen').style.visibility = 'hidden';
-      document.getElementById('buttenFour').style.visibility = 'visible';
+      document.getElementById('buttenFourteen').style.visibility = 'visible';
     }
   }
 }
